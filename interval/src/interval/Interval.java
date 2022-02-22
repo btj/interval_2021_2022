@@ -4,24 +4,24 @@ public class Interval {
 	int ondergrens;
 	int lengte;
 
-	static int getOndergrens(Interval interval) {
-		return interval.ondergrens;
+	int getOndergrens() {
+		return this.ondergrens;
 	}
 	
-	static int getBovengrens(Interval interval) {
-		return interval.ondergrens + interval.lengte;
+	int getBovengrens() {
+		return this.ondergrens + this.lengte;
 	}
 	
-	static void setOndergrens(Interval interval, int waarde) {
-		interval.ondergrens = waarde;
+	void setOndergrens(int waarde) {
+		this.ondergrens = waarde;
 	}
 	
-	static void setBovengrens(Interval interval, int waarde) {
-		interval.lengte = waarde - interval.ondergrens;
+	void setBovengrens(int waarde) {
+		this.lengte = waarde - this.ondergrens;
 	}
 	
-	static int getLength(Interval interval) {
-		return interval.lengte;
+	int getLength() {
+		return this.lengte;
 	}
 
 }
